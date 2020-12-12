@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MadLevel5Task2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="games_fragment_label">Games Fragment</string>
+    <string name="add_game_fragment_label">Add Game Fragment</string>
+    <string name="title">Title</string>
+    <string name="platform">Platform</string>
+    <string name="date">Date</string>
+</resources>

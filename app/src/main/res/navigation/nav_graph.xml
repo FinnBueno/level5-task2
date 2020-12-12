@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/GamesFragment">
+
+    <fragment
+        android:id="@+id/GamesFragment"
+        android:name="com.peakfinn.madlevel5task2.GamesFragment"
+        android:label="@string/games_fragment_label"
+        tools:layout="@layout/fragment_games">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/AddGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddGameFragment"
+        android:name="com.peakfinn.madlevel5task2.AddGameFragment"
+        android:label="@string/add_game_fragment_label"
+        tools:layout="@layout/fragment_add_game">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/GamesFragment" />
+    </fragment>
+</navigation>
