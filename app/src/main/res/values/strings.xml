@@ -7,4 +7,8 @@
     <string name="title">Title</string>
     <string name="platform">Platform</string>
     <string name="date">Date</string>
+    <string name="save_game">Save game</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
 </resources>
