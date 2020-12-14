@@ -1,11 +1,8 @@
 package com.peakfinn.madlevel5task2
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -32,7 +29,10 @@ class GamesFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_games, container, false)
+    ): View? {
+        setHasOptionsMenu(true)
+        return inflater.inflate(R.layout.fragment_games, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
